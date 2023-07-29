@@ -5,7 +5,7 @@ Here I gather the notes made from taking the course Full Stack Open aranged by t
 Technologies: Javascript, React, RESTful, Node.js, GraphQL, Typescript, React Native
 Also important: Testing, configuration, environment management, databases, continuous integration, debugging, containers
 
-## Part 0 - [Fundamentals of Web apps](./Part-0/Part-0-Notes.md)
+## [Part 0 - Fundamentals of Web apps](./Part-0/Part-0-Notes.md)
 ### Table of Contents
 1. General Info
 2. Fundamentals of Web apps
@@ -20,28 +20,29 @@ Also important: Testing, configuration, environment management, databases, conti
 11. Full-stack web development
 12. Exercises
 
-## Part 1
+## [Part 1](./Part-1/Part-1-Notes.md)
 
-## Part 2
+## [Part 2](./Part-2/Part-2-Notes.md)
 
-## Part 3
+## [Part 3](./Part-3/Part-3-Notes.md)
 
-## Part 4
+## [Part 4](./Part-4/Part-4-Notes.md)
 
-## Part 5
+## [Part 5](./Part-5/Part-5-Notes.md)
 
-## Part 6
+## [Part 6](./Part-6/Part-6-Notes.md)
 
-## Part 7
+## [Part 7](./Part-7/Part-7-Notes.md)
 
-## Part 8
+## [Part 8](./Part-8/Part-8-Notes.md)
 
-## Part 9
+## [Part 9](./Part-9/Part-9-Notes.md)
 
-## Part 10
+## [Part 10](./Part-10/Part-10-Notes.md)
 
-## Part 11
+## [Part 11](./Part-11/Part-11-Notes.md)
 
-## Part 12
+## [Part 12](./Part-12/Part-12-Notes.md)
 
-## Part 13
+## [Part 13](./Part-13/Part-13-Notes.md)
+
