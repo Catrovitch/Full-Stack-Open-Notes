@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [Introduction to React](Introduction_to_React.md)
+1. [Introduction to React](./Introduction-to-React.md)
    - [Component](Introduction_to_React.md#component)
    - [JSX](Introduction_to_React.md#jsx)
    - [Multiple components](Introduction_to_React.md#multiple-components)
