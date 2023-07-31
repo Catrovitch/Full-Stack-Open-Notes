@@ -22,7 +22,7 @@ This is how a variable is declared with JavaScript ("App" being the name of the 
 const App = ...
 ```
 
-There are several ways to set up functions in JavaScript. This is how an arrow-function is set up. It returns the html code: 
+There are several ways to set up functions in JavaScript. This is how an arrow-function is set up: 
 ```
 () => (
   <div>
@@ -32,6 +32,9 @@ There are several ways to set up functions in JavaScript. This is how an arrow-f
 ```
 
 ## JSX
+Though it might seem like React components return HTML code it is in fact not like this. React components are mostly written in JSX. JSX is an extension to JavaScript which lets you write HTML-like markup within a JavaScript file. What this means is that JSX is compiled into JavaScript using Babel. This was set up to be done automatically when we used the command "create-react-app" for setting up a basic structure for React. [Part 7](../Part-7) will look more in to how to configure this.
+
+The idea of JSX is that you can easily write dynamic content by mixing in JavaScript code in to the HTML markdown document. Just make sure yo always wrap JavaScript into {}. 
 
 ## Multiple components
 
