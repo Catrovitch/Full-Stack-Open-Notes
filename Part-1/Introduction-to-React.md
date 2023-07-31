@@ -52,3 +52,4 @@ Passing data to components is done through [props](https://react.dev/learn/passi
 When rendering something with react it needs to be a so called "primitive value", such as numbers or strings. What this means is that you can't render entire objects as this would be ambiguous as to what to render. You can render an array, but in this case the items need to all be primitive values.
 
 ## Exercises 1.1-1.2
+1. [course_information](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/course_information/src)
