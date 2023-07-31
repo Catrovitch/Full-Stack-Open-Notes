@@ -43,6 +43,10 @@ A core idea with React is to write small reusable components that can be combine
 Passing data to components is done through [props](https://react.dev/learn/passing-props-to-a-component) . Props are a way for different components to communicate with each other. Parent components can pass any JavaScript value to its child components in this way. JavaScript values are for example: objects, arrays and functions.
 
 ## Some notes
+- React components must be CAPITALIZED to work. An otherwise fully functioning component will not work if it referenced ex. footer instead of Footer.
+- The content of a React component (most of the times), must contain ONE ROOT ELEMENT. In otherwords you need to wrap your elements within one bigger element. For example. <div></div>
+- Wrapping the elements in an array works too, but this is not advicable.
+- A better option is to wrap it in so called [Fragments](https://react.dev/reference/react/Fragment). These are simply empty elements: <></>.
 
 ## Do not render objects
 
