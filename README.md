@@ -20,7 +20,7 @@ Also important: Testing, configuration, environment management, databases, conti
 11. Full-stack web development
 12. Exercises
 
-## [Part 1](./Part-1/Part-1-Notes.md)
+## [Part 1 - Introduction to React](./Part-1)
 
 ## [Part 2](./Part-2/Part-2-Notes.md)
 
