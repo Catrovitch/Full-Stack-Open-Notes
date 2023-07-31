@@ -70,6 +70,16 @@ const objcet2 = {
 - If the fieldname has an emtpy space ' ' in it, brackets must be used.
 
 ## Functions
+- Arrow funciton:
+```
+const sum = (p1, p2) => {
+  return p1 + p2
+}
+```
+If there is only one parameter the parenthesis may be excluded.
+```
+const square = p => p*p
+```
 
 ## Exercises 1.3-1.5
 
