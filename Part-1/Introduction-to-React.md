@@ -1,7 +1,7 @@
 # Introduction to React
 To create a default base when using React use command:
 ```
-create-react-app
+npx create-react-app [name of app]
 ```
 To start the application:
 ```
