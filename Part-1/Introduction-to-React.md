@@ -40,6 +40,7 @@ The idea of JSX is that you can easily write dynamic content by mixing in JavaSc
 A core idea with React is to write small reusable components that can be combined into larger ones. This way even larger, complex applications can be kept fairly simple to maintain. Another core idea with react is that the smaller components are wrapped in to the "root compnent" called "App". The App component is this way responsible for containing all other components. In some cases though are the App component itself may be found in a so called "utility component". More about utility components in [Part 6](../Part-6) .
 
 ## props: passing data to components
+Passing data to components is done through [props](https://react.dev/learn/passing-props-to-a-component) . Props are a way for different components to communicate with each other. Parent components can pass any JavaScript value to its child components in this way. JavaScript values are for example: objects, arrays and functions.
 
 ## Some notes
 
