@@ -21,6 +21,11 @@ Also important: Testing, configuration, environment management, databases, conti
 12. Exercises
 
 ## [Part 1 - Introduction to React](./Part-1)
+### Table of Contents
+1. Introduction to React
+2. JavaScript
+3. Component state, event handlers
+4. A more complex state, debugging React apps
 
 ## [Part 2](./Part-2/Part-2-Notes.md)
 
