@@ -22,7 +22,7 @@ This is how a variable is declared with JavaScript ("App" being the name of the 
 const App = ...
 ```
 
-This is how a function is set up:
+There are several ways to set up functions in JavaScript. This is how an arrow-function is set up:
 ```
 () => (
   <div>
