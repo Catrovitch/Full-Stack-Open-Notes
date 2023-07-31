@@ -37,7 +37,7 @@ Though it might seem like React components return HTML code it is in fact not li
 The idea of JSX is that you can easily write dynamic content by mixing in JavaScript code in to the HTML markdown document. Just make sure yo always wrap JavaScript into {}. 
 
 ## Multiple components
-A core idea with React is to write small reusable components that can be combined into larger ones. This way even larger, complex applications can be kept fairly simple to maintain. Another core idea with react is that the smaller components are wrapped in to the "root compnent" called "App". The App component is this way responsible for containing all other components. In some cases though are the App component itself may be found in a so called "utility component". More about utility components in [Part 6](../Part-6)
+A core idea with React is to write small reusable components that can be combined into larger ones. This way even larger, complex applications can be kept fairly simple to maintain. Another core idea with react is that the smaller components are wrapped in to the "root compnent" called "App". The App component is this way responsible for containing all other components. In some cases though are the App component itself may be found in a so called "utility component". More about utility components in [Part 6](../Part-6).
 
 ## props: passing data to components
 
