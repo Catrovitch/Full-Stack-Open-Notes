@@ -3,48 +3,47 @@
 ## Table of Contents
 
 1. [Introduction to React](./Introduction-to-React.md)
-   - [Component](./Introduction-to-React.md#component)
-   - [JSX](./Introduction-to-React.md#jsx)
-   - [Multiple components](./Introduction-to-React.md#multiple-components)
-   - [props: passing data to components](./Introduction-to-React.md#props-passing-data-to-components)
-   - [Some notes](./Introduction-to-React.md#some-notes)
-   - [Do not render objects](./Introduction-to-React.md#do-not-render-objects)
-   - [Exercises 1.1-1.2](./Introduction-to-React.md#exercises-11-12)
+   - Component
+   - JSX
+   - Multiple components
+   - props: passing data to components
+   - Some notes
+   - Do not render objects
+   - Exercises 1.1-1.2
 
 2. [JavaScript](./JavaScript.md)
-   - [Variables](./JavaScript.md#variables)
-   - [Arrays](./JavaScript.md#arrays)
-   - [Objects](./JavaScript.md#objects)
-   - [Functions](./JavaScript.md#functions)
-   - [Exercises 1.3-1.5](./JavaScript.md#exercises-13-15)
-   - [Object methods and "this"](./JavaScript.md#object-methods-and-this)
-   - [Classes](./JavaScript.md#classes)
-   - [JavaScript materials](./JavaScript.md#javascript-materials)
+   - Variables
+   - Arrays
+   - Objects
+   - Functions
+   - Exercises 1.3-1.5
+   - Object methods and "this"
+   - Classes
+   - JavaScript materials
 
 3. [Component state, event handlers](./Component-state-event-handlers.md)
-   - [Component helper functions](./Component-state-event-handlers.md#component-helper-functions)
-   - [Destructuring](./Component-state-event-handlers.md#destructuring)
-   - [Page re-rendering](./Component-state-event-handlers.md#page-re-rendering)
-   - [Stateful component](./Component-state-event-handlers.md#stateful-component)
-   - [Event handling](./Component-state-event-handlers.md#event-handling)
-   - [An event handler is a function](./Component-state-event-handlers.md#an-event-handler-is-a-function)
-   - [Passing State - to child components](./Component-state-event-handlers.md#passing-state---to-child-components)
-   - [Changes in state cause rendering](./Component-state-event-handlers.md#changes-in-state-cause-rendering)
-   - [Refactoring the components](./Component-state-event-handlers.md#refactoring-the-components)
+   - Component helper functions
+   - Destructuring
+   - Page re-rendering
+   - Stateful component
+   - Event handling
+   - An event handler is a function
+   - Passing State - to child components
+   - Changes in state cause rendering
+   - Refactoring the components
 
 4. [A more complex state, debugging React apps](./A-more-complex-state-debugging-React-apps.md)
-   - [Complex state](./A-more-complex-state-debugging-React-apps.md#complex-state)
-   - [Handling arrays](./A-more-complex-state-debugging-React-apps.md#handling-arrays)
-   - [Update of the state is asynchronous](./A-more-complex-state-debugging-React-apps.md#update-of-the-state-is-asynchronous)
-   - [Conditional rendering](./A-more-complex-state-debugging-React-apps.md#conditional-rendering)
-   - [Old React](./A-more-complex-state-debugging-React-apps.md#old-react)
-   - [Debugging React applications](./A-more-complex-state-debugging-React-apps.md#debugging-react-applications)
-   - [Rules of Hooks](./A-more-complex-state-debugging-React-apps.md#rules-of-hooks)
-   - [Event Handling Revisited](./A-more-complex-state-debugging-React-apps.md#event-handling-revisited)
-   - [A function that returns a function](./A-more-complex-state-debugging-React-apps.md#a-function-that-returns-a-function)
-   - [Passing Event Handlers to Child Components](./A-more-complex-state-debugging-React-apps.md#passing-event-handlers-to-child-components)
-   - [Do Not Define Components Within Components](./A-more-complex-state-debugging-React-apps.md#do-not-define-components-within-components)
-   - [Useful Reading](./A-more-complex-state-debugging-React-apps.md#useful-reading)
-   - [Web programmers oath](./A-more-complex-state-debugging-React-apps.md#web-programmers-oath)
-   - [Exercises 1.6-1.14](./A-more-complex-state-debugging-React-apps.md#exercises-16-114)
-
+   - Complex state
+   - Handling arrays
+   - Update of the state is asynchronous
+   - Conditional rendering
+   - Old React
+   - Debugging React applications
+   - Rules of Hooks
+   - Event Handling Revisited
+   - A function that returns a function
+   - Passing Event Handlers to Child Components
+   - Do Not Define Components Within Components
+   - Useful Reading
+   - Web programmers oath
+   - Exercises 1.6-1.14
