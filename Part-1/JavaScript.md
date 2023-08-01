@@ -86,6 +86,11 @@ const square = p => p*p
 Link to exercise repository [here](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/course_information)
 
 ## Object methods and "this"
+Arror functions => and functions defined with key-word "function" work differently when it comes to the keyword "this" - refers to the object itself. 
+When calling a method through the use of a reference, functions in JavaScript lose track of what the object is and thus "this" does not work. 
+There are however several ways to not lose track of "this". One such way is to use "bind". Bind freezes the reference to the object independet of where and how the method is being called. 
+Arrow functions solve some of the problems related to "this", but should never be used as methods of objects.
+
 
 ## Classes
 
