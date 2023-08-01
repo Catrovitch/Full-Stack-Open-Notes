@@ -113,3 +113,10 @@ janja.greet()
 Through the syntax above we can achieve class like syntax, but it should be noted that there is still no such type as "class" - only "object".
 
 ## JavaScript materials
+- [Mozilla' JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [A re-introduction to JavaScript (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_overview)
+- [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
+- [javascript.info](https://javascript.info/)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
+- [Namaste JavaScript](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
+- [egghead.io](https://egghead.io/)
