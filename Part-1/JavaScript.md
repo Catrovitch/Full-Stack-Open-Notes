@@ -91,7 +91,25 @@ When calling a method through the use of a reference, functions in JavaScript lo
 There are however several ways to not lose track of "this". One such way is to use "bind". Bind freezes the reference to the object independet of where and how the method is being called. 
 Arrow functions solve some of the problems related to "this", but should never be used as methods of objects.
 
-
 ## Classes
+JavaScript does not have any true classes. However there are class-like objects through using object inheretence.
+```
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+  greet() {
+    console.log('hello, my name is ' + this.name)
+  }
+}
+
+const adam = new Person('Adam Ondra', 29)
+adam.greet()
+
+const janja = new Person('Janja Garnbret', 23)
+janja.greet()
+```
+Through the syntax above we can achieve class like syntax, but it should be noted that there is still no such type as "class" - only "object".
 
 ## JavaScript materials
