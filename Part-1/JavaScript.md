@@ -83,6 +83,8 @@ const square = p => p*p
 
 ## Exercises 1.3-1.5
 
+Link to exercise repository [here](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/course_information)
+
 ## Object methods and "this"
 
 ## Classes
