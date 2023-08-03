@@ -42,6 +42,9 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - This is so that hooks are always called in the same exact order. The application will behave unpredictably otherwise.
 
 ## Event Handling Revisited
+- Event handlers must always be a function or a reference to a function
+- It can *NOT* be a: *string, operation, variable-assignment, function-call
+- Only a function or a reference to a function will work
 
 ## A function that returns a function
 
