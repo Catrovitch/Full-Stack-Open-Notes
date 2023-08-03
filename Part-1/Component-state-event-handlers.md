@@ -1,6 +1,26 @@
 # Component state, event handlers
 
 ## Component helper functions
+```
+const Hello = (props) => {
+
+  const bornYear = () => {
+    const yearNow = new Date().getFullYear()
+    return yearNow - props.age
+  }
+
+  return (
+    <div>
+      <p>
+        Hello {props.name}, you are {props.age} years old
+      </p>
+
+      <p>So you were probably born in {bornYear()}</p>
+    </div>
+  )
+}
+```
+In the example above the logic for guessing the year of birth is separated into a function of its own. This function is called when the component is rendered. There's no need to pass the person's age as a parameter, since the function has direct access of all the props of the passed component. If you notice the helper function "bornYear" is defined within another function. This is common in JavaScript.
 
 ## Destructuring
 
