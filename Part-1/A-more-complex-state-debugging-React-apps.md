@@ -64,5 +64,9 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
 
 ## Web programmers oath
+- Use the Developer Console at all times
+- Progress in small steps
+- Use console.log()
+- Do not write more code if the current code does not work
 
 ## Exercises 1.6-1.14
