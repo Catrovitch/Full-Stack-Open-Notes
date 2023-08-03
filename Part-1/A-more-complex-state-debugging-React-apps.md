@@ -34,6 +34,12 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - This happens at: Developer Console > Components
 
 ## Rules of Hooks
+- Hooks won't work correctly if not applied according to a few rules
+- useState & useEffect functions *must not be called from within*:
+    - loop
+    - conditional expression
+    - any place that is not a function defining a component
+- This is so that hooks are always called in the same exact order. The application will behave unpredictably otherwise.
 
 ## Event Handling Revisited
 
