@@ -10,6 +10,7 @@ Choosing to store states in separate or the same object is an important aspect w
 When handling arrays in React you may use a useState which keeps track of this. One idea is to use the method *push* to simply append the next item to the array, but DON'T do this. Remember that it is forbidden to directly mutate the state of a React component. Instead you should use the method *concat* which copies the existing state of the list to a new object to which it also adds the new item.
 
 ## Update of the state is asynchronous
+States are updated in React asynchronously which means that they may not always update emediately after being updated in the code. This might lead to bugs which might be hard to spot. This can be avoided by setting new constants which do update emediately.
 
 ## Conditional rendering
 
