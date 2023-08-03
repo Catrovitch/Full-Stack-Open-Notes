@@ -51,7 +51,7 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - This introduces complexity to an application, but may be practical in some cases.
 
 ## Passing Event Handlers to Child Components
-
+- 
 ## Do Not Define Components Within Components
 
 ## Useful Reading
