@@ -45,6 +45,47 @@ const App = () => {
 ```
 
 ## Event handling
+As already mentioned Event handling is a technique in React to set in motion certain things when an event happes, I.E. when certain criterias are met. This could for example be when a button is clicked. In React button elements have a set of mouse events - click is the most common. The click-event can also be triggered with a keybind or by a touch on a touchscreen. In React you can tie an event-handler-function to the click event like this:
+```
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+
+  const handleClick = () => {
+    console.log('clicked')
+  }
+
+  return (
+    <div>
+      <div>{counter}</div>
+
+      <button onClick={handleClick}>
+        plus
+      </button>
+    </div>
+  )
+}
+```
+We assign the function handleClick to the buttons onClick parameter. Through editing this function we can play with what happens when you press the button. An alternative syntax of the above would be:
+```
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+  return (
+    <div>
+      <div>{counter}</div>
+      <button onClick={() => setCounter(counter + 1)}>
+        plus
+      </button>
+
+      <button onClick={() => setCounter(0)}> 
+        zero
+      </button>
+    </div>
+  )
+}
+```
+Notice that here we define the function directly to the parameter onClick instead.
 
 ## An event handler is a function
 
