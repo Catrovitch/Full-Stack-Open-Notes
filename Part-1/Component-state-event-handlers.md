@@ -28,6 +28,7 @@ Upon asignment there is a way of destructuring values from both objects and arra
 const Hello = ({ name, age }) => {...
 ```
 ## Page re-rendering
+It is not adviced to re-render by making repeated calls to the function that renders the page.
 
 ## Stateful component
 
