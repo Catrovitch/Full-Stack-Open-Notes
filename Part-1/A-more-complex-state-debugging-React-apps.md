@@ -19,6 +19,19 @@ States are updated in React asynchronously which means that they may not always 
 In the course [state hooks](https://react.dev/learn/state-a-components-memory) are used exclusively to add states to React components as this is how states are added in current and future variations of React. However - this feature was only added in version 16.8.0 and there is a lot of legacy code out there. Hence it is important to also be familiar with the old style of adding states. This was done through using JavaScript's class syntax. 
 
 ## Debugging React applications
+- Developer console
+- Especially the Console tab
+- Keep code and webpage + developer console open (separate screens)
+- Fix problems immediately
+- Old-school console.log() gives great insight into how your code functions
+- console.log(props) - That is, the entire props, instead of just parts
+- Pause execution of the application code in Chrome developer console > Sources > filename. The code will stop anywhere by writing *debugger* at a specific place in your code.
+- Inspect the current state of variables: Developer console > Console-tab
+- The debugger allows for one-line-at-a-time execution. The controls for this are found on the right-hand side of the Sources-tab.
+- The debugger can also be accessed without writing *debugger* in the code by adding breakpoints in teh *Sources*-tab.
+- Inspecting a component's variables can be done in the *Scope*-section.
+- React developer tools extension to Chrome lets you view all React elements in the application.
+- This happens at: Developer Console > Components
 
 ## Rules of Hooks
 
