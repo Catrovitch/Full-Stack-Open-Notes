@@ -54,6 +54,9 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - [Example only](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
 
 ## Do Not Define Components Within Components
+- Never define a component within another component
+- There is no benefit to it
+- Hinders optimization due to React treating the nested component as a new component every render
 
 ## Useful Reading
 
