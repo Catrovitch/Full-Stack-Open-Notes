@@ -59,6 +59,9 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - Hinders optimization due to React treating the nested component as a new component every render
 
 ## Useful Reading
+- [Official React documentation](https://react.dev/learn)
+- [Egghead.io](https://egghead.io/)
+- [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
 
 ## Web programmers oath
 
