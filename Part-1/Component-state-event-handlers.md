@@ -31,6 +31,18 @@ const Hello = ({ name, age }) => {...
 It is not adviced to re-render by making repeated calls to the function that renders the page.
 
 ## Stateful component
+Through the use of React hooks and the { useState } function we can re-render components dynamically. This works so that the useState listens to change in a component and rerenders it according to how it has been asigned. In the example below the useState() function has been used to re-render the page once every 1000th ms.
+```
+import { useState } from 'react'
+
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
+
+  setTimeout(
+    () => setCounter(counter + 1),
+    1000
+  )
+```
 
 ## Event handling
 
