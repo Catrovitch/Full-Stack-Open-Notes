@@ -85,10 +85,12 @@ const App = () => {
   )
 }
 ```
-Notice that here we define the function directly to the parameter onClick instead.
+Notice that here we define the function directly to the parameter onClick instead. This is not adviced however.
 
 ## An event handler is a function
+Event handling is actually a function call and thus what can be passed to an event-handler are either a function or a reference to a function. Anything else will break the application the second the event-handler is used.
 
+Usually it is not wise to define event handlers within JSX-templates. They should rather be separated into functions of their own and be referenced. 
 ## Passing State - to child components
 
 ## Changes in state cause rendering
