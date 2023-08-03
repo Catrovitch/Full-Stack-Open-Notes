@@ -13,6 +13,7 @@ When handling arrays in React you may use a useState which keeps track of this. 
 States are updated in React asynchronously which means that they may not always update emediately after being updated in the code. This might lead to bugs which might be hard to spot. This can be avoided by setting new constants which do update emediately.
 
 ## Conditional rendering
+[Conditional rendering](https://react.dev/learn/conditional-rendering) means that a component returns completely different elements depending on the state of that object. There are also other forms of conditional rendering. [Part 2](https://github.com/Catrovitch/Full-Stack-Open-Notes/tree/main/Part-2) will look more in to this.
 
 ## Old React
 
