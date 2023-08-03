@@ -47,6 +47,8 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - Only a function or a reference to a function will work
 
 ## A function that returns a function
+- An event handler can also use a *function that returns a function*.
+- This introduces complexity to an application, but may be practical in some cases.
 
 ## Passing Event Handlers to Child Components
 
