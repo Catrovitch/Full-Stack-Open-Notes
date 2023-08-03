@@ -96,5 +96,13 @@ When writing React components keep them small and reusable. The resuability shou
 According to React it is convention to name props connected to event handler "onSomething" and the event handler itself "handleSomething".
 
 ## Changes in state cause rendering
+Principles of how example2 app works once again:
+1. When app starts: App-code is executed. This code uses "useState" hook to create and keep track of he application state.
+2. Display component displays the counter.
+3. Button component uses event handlers to handle events. There are three buttons.
+4. When a button is clicked (onClick event) the event handler is executed.
+5. The event handler changes the state of the App component.
+6. This causes the App component to re-render.
+7. This application uses the principle of "Lift the state up". The state of the counter is lifted from Button (onClick) to event handlers (...) to the Display component to the App useState.
 
 ## Refactoring the components
