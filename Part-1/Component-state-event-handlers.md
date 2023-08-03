@@ -92,6 +92,8 @@ Event handling is actually a function call and thus what can be passed to an eve
 
 Usually it is not wise to define event handlers within JSX-templates. They should rather be separated into functions of their own and be referenced. 
 ## Passing State - to child components
+When writing React components keep them small and reusable. The resuability should mean that the components can be used many times within an application and even across different projects. "Lift the state up" is a principle within React that says that if: *several components need to reflect the same changing data - lift the shared state up to their closest common ancestor.*
+According to React it is convention to name props connected to event handler "onSomething" and the event handler itself "handleSomething".
 
 ## Changes in state cause rendering
 
