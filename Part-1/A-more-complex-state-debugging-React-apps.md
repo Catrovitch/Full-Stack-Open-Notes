@@ -16,6 +16,7 @@ States are updated in React asynchronously which means that they may not always 
 [Conditional rendering](https://react.dev/learn/conditional-rendering) means that a component returns completely different elements depending on the state of that object. There are also other forms of conditional rendering. [Part 2](https://github.com/Catrovitch/Full-Stack-Open-Notes/tree/main/Part-2) will look more in to this.
 
 ## Old React
+In the course [state hooks](https://react.dev/learn/state-a-components-memory) are used exclusively to add states to React components as this is how states are added in current and future variations of React. However - this feature was only added in version 16.8.0 and there is a lot of legacy code out there. Hence it is important to also be familiar with the old style of adding states. This was done through using JavaScript's class syntax. 
 
 ## Debugging React applications
 
