@@ -106,3 +106,7 @@ Principles of how example2 app works once again:
 7. This application uses the principle of "Lift the state up". The state of the counter is lifted from Button (onClick) to event handlers (...) to the Display component to the App useState.
 
 ## Refactoring the components
+Some principles:
+  1. Only one prop? Use the compact form of arrow functions! const FunctionName = ({ prop-name }) => <>{prop-name}</>
+  2. Use destructuring. const FunctionName = (props) ... --> const FunctionName = ({const1, const2 ... const-n}) ...
+  3. Don't oversimplify components as this makes it cumbersome to add complexity to them.
