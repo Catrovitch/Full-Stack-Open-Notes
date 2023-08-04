@@ -70,6 +70,9 @@ var totalAmount = order.reduce((sum, order) =>
 See [Part 1 - Event Handlers](https://github.com/Catrovitch/Full-Stack-Open-Notes/blob/main/Part-1/Component-state-event-handlers.md)
 
 ## Rendering Collections
+Link to example [here](./Examples/example1) .
+
+Instead of hard-coding three lines of the following: <li>{notes[1].content}</li>, we can use map function to do this: notes.map(note => <li>{note.content}</li>). This removes any hard coding, makes the code shorter and more readable.
 
 ## Key-Attribute
 
