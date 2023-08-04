@@ -111,6 +111,12 @@ const result = notes.map(note => note.id)
 - Here we use the map function with the call back function note => note.id (which returns the prop id for any given object) to return the id's of all notes.
 
 ## Anti-pattern: Array Indexes as Keys
+- Using the map function we can pass a second argument to access the indexes of an array.
+- Example:
+```
+notes.map((note, i) => ...)
+```
+It's however not advicable to do this as this can have unexpected consequences. More about this [here](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
 
 ## Refactoring Modules
 
