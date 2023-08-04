@@ -119,6 +119,9 @@ notes.map((note, i) => ...)
 It's however not advicable to do this as this can have unexpected consequences. More about this [here](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
 
 ## Refactoring Modules
+- A common file structure is to keep each component in its own file as an ES6-module and import them to where they are needed
+- Import through format: import [ComponenetName] from './components/[ComponentName]
+- In the ComponentName the file format .js can be omitted.
 
 ## When the Application Breaks
 
