@@ -67,6 +67,7 @@ var totalAmount = order.reduce((sum, order) =>
       4. After last item: return the sum as totalAmount
 
 ## Event Handlers Revisited
+See [Part 1 - Event Handlers](../Part-1/)
 
 ## Rendering Collections
 
