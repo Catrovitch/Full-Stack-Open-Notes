@@ -1,6 +1,6 @@
 # Table of contents
 
-1. [Rendering-a-collection](./1. Rendering-a-collection-modules)
+1. [Rendering-a-collection](./1-Rendering-a-collection-modules)
   - console.log
   - Protip: Visual Studio Code snippets
   - JavaScript Arrays
