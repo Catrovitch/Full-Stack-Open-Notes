@@ -72,7 +72,18 @@ See [Part 1 - Event Handlers](https://github.com/Catrovitch/Full-Stack-Open-Note
 ## Rendering Collections
 Link to example [here](./Examples/example1) .
 
-Instead of hard-coding three lines of the following: <li>{notes[1].content}</li>, we can use map function to do this: notes.map(note => <li>{note.content}</li>). This removes any hard coding, makes the code shorter and more readable.
+Instead of hard-coding three lines of the following: 
+```
+<li>{notes[1].content}</li>
+<li>{notes[2].content}</li>
+<li>{notes[3].content}</li>
+```
+
+We can use map function to do this:
+```
+notes.map(note => <li>{note.content}</li>).
+```
+This removes any hard coding, makes the code shorter and more readable.
 
 ## Key-Attribute
 
