@@ -124,7 +124,13 @@ It's however not advicable to do this as this can have unexpected consequences. 
 - In the ComponentName the file format .js can be omitted.
 
 ## When the Application Breaks
-
+- A common problem is that a components props are expected to be of a different type.
+- console.log for God sake.
+- 
 ## Web developer's oath
+- Developer console open all the time
+- Progress in small steps
+- console.log()
+- If my code doesn't work - I won't proceed
 
 ## Exercises 2.1-2.5
