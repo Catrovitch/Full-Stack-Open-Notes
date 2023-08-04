@@ -13,11 +13,11 @@
   - When the Application Breaks
   - Web developer's oath
   - Exercises 2.1-2.5
-2. [Forms](https://fullstackopen.com/en/part2/forms)
+2. [Forms](./Forms)
   - Controlled component
   - Filtering Displayed Elements
   - Exercises 2.6-2.10
-3. [Getting-data-from-server](https://fullstackopen.com/en/part2/getting_data_from_server)
+3. [Getting-data-from-server](./Getting-data-from-server)
   - The browser as a runtime environment
   - npm
   - Axios and promises
