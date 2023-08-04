@@ -1,6 +1,6 @@
 # Table of contents
 
-1. [Rendering-a-collection](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
+1. [Rendering-a-collection](./1. Rendering-a-collection-modules)
   - console.log
   - Protip: Visual Studio Code snippets
   - JavaScript Arrays
