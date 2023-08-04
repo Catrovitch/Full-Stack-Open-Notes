@@ -70,3 +70,6 @@ In the course [state hooks](https://react.dev/learn/state-a-components-memory) a
 - Do not write more code if the current code does not work
 
 ## Exercises 1.6-1.14
+1. [course infromation](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/course_information)
+2. [unicafe](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/unicafe)
+3. [anecdotes](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part1/anecdotes)
