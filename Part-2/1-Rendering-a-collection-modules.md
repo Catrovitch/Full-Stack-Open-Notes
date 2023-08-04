@@ -11,6 +11,10 @@
 - Example of built in snippet: write 'log' and press 'tab' --> turns in to console.log(). 
 
 ## JavaScript Arrays
+Some videos about functional programming in JavaScript:
+1. [Higher-order functions](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+2. [Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=2)
+3. [Reduce basics](https://www.youtube.com/watch?v=Wl98eZpkp-c&t=31s)
 
 ## Event Handlers Revisited
 
