@@ -135,4 +135,3 @@ It's however not advicable to do this as this can have unexpected consequences. 
 
 ## Exercises 2.1-2.5
 - [course_information](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part2/course_information)
-- 
