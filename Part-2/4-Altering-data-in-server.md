@@ -62,3 +62,13 @@ const person = { name, age }
 - Rejections cause erros if we don't have a way to handle them.
 - Erros can be handled by adding the *.catch(error => {...}*.
 
+## Full Stack Developer's Oath
+- Full Stack Development is hard --> I will use all the possible means to make it easier
+- I will have the browser development console open all the time
+- Use the network tab of the browser dev tools to ensure that frontend and backend are communicating as expected
+- Constantly keep and eye on teh state of the server to make sure that the data sent there by the forntend is saved there as I expect
+- Progress in small steps
+- I will write lots of console.log statements
+- If the code doesn't work <--> Don't write more code
+
+
