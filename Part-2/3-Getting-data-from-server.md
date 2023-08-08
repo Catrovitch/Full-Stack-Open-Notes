@@ -101,6 +101,22 @@ axios
 - By default, effects run after every completed render. Alternatively conditions can be defined for execution.
 - If the second parameter is an empty adday the effect is only executed with the first render of the component
 
+# The development runtime environment
+The notes below apply to the example used in this part of the course; Part-2>examples>example2>notes.
+
+There are currently four parts of the applicatin that currently all run on localhost.
+
+1. Files:
+     - app.js, index.js
+     - db.json
+2. react dev server
+3. json-server
+4. browser: react-app
+
+- Files is responsible for handling all the code which the developer has written for the app.
+- React dev server: This is started through the *npm start* command. This handles app.js and index.js which it passes to the browser.
+- Json-server: functions as a local server which the browser calls on for data. It also fetches the data from db.json
+- Browser: The browser compiles all the code in app.js and index.js to one piece of code which is understood by the browser. It also fetches the data from the json-server refered to in the code.
 
 
 
