@@ -30,3 +30,39 @@ npx json-server --port 3001 --watch db.json
 - For more on this topic see the [What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - There are work arounds to the single-threaded nature of JavaScript engines. It is possible to run parallelized code with so-called [web-workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 - The event loop of one browser window is however always and only run single-threadedly.
+
+## npm
+
+- [axios](https://github.com/axios/axios) is a library whici is used for communication between the browser and the server. It is similar to the fetch method, but has some quality of life.
+- node package manager [npm](https://docs.npmjs.com/getting-started/what-is-npm) is the de facto tool to handle React projects
+- A clear indication that a project uses npm is the *package.json* file.
+- In *package.json* the dependencies part is responsible for defining the dependencies of a project.
+- To install a library use the command:
+```
+npm install [library-name]
+```
+- npm-commands should always be run in the project-root-directory where *package.json* is found.
+- npm install adds the library to the list of dependencies as well as downloading the library code to the *node_modules* directory
+- If there is some library which is only relevant in the development phase of a project use:
+```
+npm install [library-name] --save-dev
+```
+- For example: npm install json-server --save-dev.
+- In this case we also want to make a small edit in *package-json*:
+```
+{
+  // ... 
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+
+    *"server": "json-server -p3001 --watch db.json"*
+  },
+}
+```
+- This makes it convinient to start the json-server mentioned earlier as the port is defined within *package.json*, through only using command:
+```
+npm run server
+```
