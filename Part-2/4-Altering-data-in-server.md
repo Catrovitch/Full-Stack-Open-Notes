@@ -43,3 +43,17 @@ const changedNote = {...note, important: !note.important}
 - Database handlers are usually kept in a directory *src/services/nameOfTheHandler.js*
 - App.js imports this module *import nameOfTheHandler from './services/nameOfTheHandler'
 - App.js can now use the functions in the module by reference to *nameOfTheHandler.functionName*
+
+## Cleaner Syntax for Defining Object Literals
+- Exporting objects can utilize the syntax which came with ES6 JavaScript that lets us define the properties directly if the variables are the same. Example:
+```
+const person = {
+  name: name,
+  age: age
+}
+```
+can be shortend:
+```
+const person = { name, age }
+```
+
