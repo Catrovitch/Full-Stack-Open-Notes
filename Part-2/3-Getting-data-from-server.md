@@ -95,3 +95,12 @@ axios
 ```
 - The data returned by the server is plain text, but axios is able to parse this to a JavaScript array, since the server also specified the data format using the content-type header.
 
+## Effect-hooks
+- Effect-hooks are a way to perform side effects on function components. Examples would be: data fetching, setting up subscriptions and manually changing the DOM in React components.
+- An effect-hook takes two parameters
+- By default, effects run after every completed render. Alternatively conditions can be defined for execution.
+- If the second parameter is an empty adday the effect is only executed with the first render of the component
+
+
+
+
