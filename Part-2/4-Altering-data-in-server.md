@@ -37,3 +37,9 @@ const changedNote = {...note, important: !note.important}
 ```
 - changedNote is a so called [shallow copy](https://en.wikipedia.org/wiki/Object_copying#Shallow_copy).
 - A shallow copy is an object which was created by referencing to another object. If all the properties of the original object are simple there is no probelm. But if the properties of the original objects where objects themselves --> The new objects properties reference these same objects. This could cause issues when mutating these objects as mutating a component state directly is forbidden in REACT.
+
+## Extracting Communication with the Backend into a Separate Module
+- Single responsibility principle: One module should handle one thing.
+- Database handlers are usually kept in a directory *src/services/nameOfTheHandler.js*
+- App.js imports this module *import nameOfTheHandler from './services/nameOfTheHandler'
+- App.js can now use the functions in the module by reference to *nameOfTheHandler.functionName*
