@@ -71,4 +71,5 @@ const person = { name, age }
 - I will write lots of console.log statements
 - If the code doesn't work <--> Don't write more code
 
-
+# Exercises
+- Link to exercise: [Phonebook](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part2/phonebook)
