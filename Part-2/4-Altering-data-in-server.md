@@ -57,3 +57,8 @@ can be shortend:
 const person = { name, age }
 ```
 
+## Promises and Errors
+- HTTP request has three states as mentioned earlier; *pending*, *fulfilled* and *rejected*
+- Rejections cause erros if we don't have a way to handle them.
+- Erros can be handled by adding the *.catch(error => {...}*.
+
