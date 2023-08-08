@@ -21,3 +21,19 @@ This chaper looks at conventions used by json-server and REST APIs in general. S
   - This is used to see the request data
 - Network > Response:
   - This shows how what the server responded with
+
+## Changing the Importance of Notes
+- Individual notes stored on the JSON-server backend can be modified in two different ways by making a HTTP request to the note's unique URL
+  1. Replace the whole note with HTTP PUT request
+  2. Change the note with HTTP PATCH request
+- Wanting to find a specific item in an array containing objects - use the below *find* syntax:
+```
+id = idWeWantToFind
+const noteToFind = notes.find(n => n.id === id)
+```
+- Change the object property by making a copy of the old object and replacing the property:
+```
+const changedNote = {...note, important: !note.important}
+```
+- changedNote is a so called [shallow copy](https://en.wikipedia.org/wiki/Object_copying#Shallow_copy).
+- A shallow copy is an object which was created by referencing to another object. If all the properties of the original object are simple there is no probelm. But if the properties of the original objects where objects themselves --> The new objects properties reference these same objects. This could cause issues when mutating these objects as mutating a component state directly is forbidden in REACT.
