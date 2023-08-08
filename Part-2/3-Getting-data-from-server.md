@@ -66,3 +66,32 @@ npm install [library-name] --save-dev
 ```
 npm run server
 ```
+
+## Axios and promises
+- A promise is an object which represents either an eventual completion or the failure of an asynchronous operation [Mozzila parphrased]
+- The three distinct phases of a promise:
+    1. *Pending*: The final value of the promise is not ready.
+    2. *Fulfilled*: The operation is completed and generally succesful. The final value is available. This state is sometimes also called *resolved*.
+    3. *Rejected*: An error prevented the final value from being determined. Generally it means the operation failed.
+- To access the result of a promise there must be an event-handler registered to the promise.
+- This is achieved through the method "then":
+```
+const promise = axios.get(url)
+
+promise.then(response => {
+  console.log(response)
+})
+```
+- The JavaScript runtime environment calls the call-back function registered by the *then* mehtod. This provides a response object as a parameter.
+- This response object contains all the data related to the HTTP GET request perforned by axios promise. This includes: data, status code and headers.
+- Usually it is not necessary to store the promise object in a variable. Instead we can achieve the same result like this:
+```
+axios
+  .get('http://localhost:3001/notes')
+  .then(response => {
+    const notes = response.data
+    console.log(notes)
+  })
+```
+- The data returned by the server is plain text, but axios is able to parse this to a JavaScript array, since the server also specified the data format using the content-type header.
+
