@@ -72,3 +72,39 @@
 ## Exercises 2.16-2.17
 - Link to exercise: [Phonebook](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part2/phonebook)
 
+## Couple of important remarks
+- If a state is storing one thing - let the initial value be *null*
+- Letting the initial value be an empty array *[]*, masks errors that would occur with null.
+- But masking isn't solvning the error
+- An example of this would be if a component renders a list but when it tries to do the first render the value of the state is *null*. This leads to an error.
+- Alternatively to setting the initial value to be an empty array *[]* we can also use conditional rendering. Example:
+```
+if (!notes) {
+  return null
+}
+...
+```
+- This leads to nothing being rendered if the value of notes is *null*. After if the value changes we can return something else which is then rendered
+- Use conditional rendering when it is impossible to define an initial state that may be rendered with the normal logic used to return the component which should be rendered
+
+- Another parameter which we need to take a look at is the second parameter is the useEffect()
+```
+useEffect(() => {
+  noteService
+    .getAll()
+    .then(initialNotes => {
+      setNotes(initialNotes)  
+    })
+
+}, [])
+```
+- The second paramter/parameters which are placed within an array is used to specify when the useEffect should be run.
+- The useState is run:
+  1. The first render of the component
+  2. Always when the a parameter in the array changes
+-  In case above with the empty array there is nothing that can change --> The useEffect is only run once
+-  However there are examples where we want the useEffect to be run otherwise.
+-  In these cases: put the parameter in the array and give it a useState() function
+
+
+
