@@ -69,3 +69,6 @@
     - The componenet contains all of the elements; content (HTML), functionality (JavaScript) and styling (CSS/inline-styling)
     - The idea is that these components are as independent as possible and can thus be reused easily.
 
+## Exercises 2.16-2.17
+- Link to exercise: [Phonebook](https://github.com/Catrovitch/Full-Stack-Open-Exercises/tree/main/part2/phonebook)
+
