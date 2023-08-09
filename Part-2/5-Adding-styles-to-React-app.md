@@ -29,3 +29,7 @@
 }
 ```
 - This way we can add other list elements with them not being affected by the CSS
+
+## Improved error message
+- Basic: alert('message')
+- See example: Notes for an improved error message
