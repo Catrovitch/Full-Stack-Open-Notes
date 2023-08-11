@@ -229,3 +229,10 @@ This is another alternative to view requests. See more [here](https://www.jetbra
 - POST is neither SAFE or IDEMPOTENT.
 - None of the above are laws. Simply suggestions.
 
+## Middleware
+- Middleware are functions that can be used to handle requests and respons objects.
+- Example: json-parser. It takes the raw data from a request and parses it into a JavaScript object and asigns it to the request object as a new property "body".
+- You can use many middlewares at the same time. They will be executed synchronously.
+
+## Exercises
+- [Phonebook Backend](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
