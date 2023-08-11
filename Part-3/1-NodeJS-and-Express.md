@@ -219,4 +219,6 @@ This is another alternative to view requests. See more [here](https://www.jetbra
 - The request object also has the headers property which contains all of the headers of a specific request
 - VS REST: An extra empty line between the top row and the row specifying HTTP headers will lead to the REST client interperating this as "all headers are empty"
  
+## Exercises 3.1.-3.6
+- Link to exercises [here](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
 
