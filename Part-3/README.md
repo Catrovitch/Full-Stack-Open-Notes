@@ -1,7 +1,7 @@
 # Programming a server with NodeJS and Express
 
 ## Table of contents
-## [1. Node.js and Express](./NodeJS-and-Express.md)
+## [1. Node.js and Express](./1-NodeJS-and-Express.md)
 - Simple web server
 - Express
 - Web and express
@@ -18,7 +18,7 @@
 - Middleware
 - Exercises 3.7-3.8
 
-## [2. Deploying app to internet](./Deploying-app-to-internet.md)
+## [2. Deploying app to internet](./2-Deploying-app-to-internet.md)
 - Same origin policy and CORS
 - Application and the internet
 - Frontend production build
@@ -28,7 +28,7 @@
 - proxy
 - Exercises 3.9-3.11
 
-## [3. Saving data to MongoDB](./Saving-data-to-MongoDB)
+## [3. Saving data to MongoDB](./3-Saving-data-to-MongoDB.md)
 - Debugging Node applications
 - MongoDB
 - Schema
@@ -47,7 +47,7 @@
 - A true full stack developer's oath
 - Exercises 3.15-3.18
 
-## Validation and ESLint
+## [Validation and ESLint](./4-Validation-and-ESLint.md)
 - Deploying the database backend to production
 - Exercises 3.19-3.21
 - Lint
