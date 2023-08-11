@@ -80,3 +80,16 @@ const app = http.createServer((request, response) => {
 - The server / event handler would now return a response:
     1. Status code: 200 with Content-Type header set to: application/json
     2. The content set to a Json-string of the notes
+
+## Express
+- Express is a Node library which abstracts much of the server side development.
+- Add it to a Node project with command:
+```
+npm install expresss
+```
+- package.json has now a field with a list of dependencies, containing express
+- In the node_modules directory you can find the dependencies as well as all the transitive dependencies
+- update dependencies with:
+```
+npm update
+```
