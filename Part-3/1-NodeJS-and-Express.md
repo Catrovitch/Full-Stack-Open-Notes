@@ -145,13 +145,15 @@ localhost:3001/notes/13
 - These opreations are known has HTTP verbs
 - The three parts of REST:
 
-URL      |    verb    |    functionality
-notes/13 |    GET     |    fetches a single resource
-notes    |    GET     |    fetches all resources in the collection
-notes    |    POST    |    creates a new resource based on teh request data
-notes/10 |    DELETE  |    removes the identified resource
-notes/10 |    PUT     |    replaces the entire identified resource with the request data
-notes/10 |    Patch   |    replaces a part of the identified resource with the request data
+|   URL    |   Verb   |   Functionality                                     |
+|:--------:|:--------:|:---------------------------------------------------:|
+| notes/13 |   GET    |   Fetches a single resource                         |
+|   notes  |   GET    |   Fetches all resources in the collection           |
+|   notes  |   POST   |   Creates a new resource based on the request data |
+| notes/10 |  DELETE  |   Removes the identified resource                   |
+| notes/10 |   PUT    |   Replaces the entire identified resource          |
+| notes/10 |  PATCH   |   Replaces a part of the identified resource       |
+
 
 - The a above is a rough definition of what REST refers to as a [uniform interface](https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints)
 - Uniform interfaces means a consistent way of defining interfaces that make it possible for systems to interact
