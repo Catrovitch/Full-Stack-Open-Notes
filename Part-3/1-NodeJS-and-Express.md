@@ -98,3 +98,36 @@ npm update
 - Lets us define roots
 - automizes Json.stringify and more
 - node-repl: interactive node command line, where you can test how commands work in node
+
+## nodemon
+- In React the webpage reloaded automatically when making changes to any file
+- This is not the case with standard Node.js/Express
+- To circumvent this we can use a package called "nodemon"
+- Install nodemon as a development dependencie:
+```
+npm install --save-dev nodemon
+```
+- Start the application using nodemon like this:
+```
+node_modules/.bin/nodemon index.js
+```
+- For ease of use: add it to the package.json scripts:
+```
+{
+  // ..
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  // ..
+}
+```
+- Now use the command:
+```
+npm run dev
+```
+- "run" is needed here because nodemon is not a node-native script
+- Note: The backend will restart automatically when changes are made to files. BUT! The browser will still need a refresh to show the changes. This is because we don't have the functionality of [hot reload](https://gaearon.github.io/react-hot-loader/getstarted/) like we had in React.
+
+
