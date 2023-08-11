@@ -196,6 +196,8 @@ app.delete('/api/notes/:id', (request, response) => {
 - There is no consensus on what status code should be returned to a DELETE request if the resource does not exist.
 - Alternatives: 204: no content, 404: Error
 
+## Postman
+- Postman is a tool to make testing of backends easier
 
 
 
