@@ -158,4 +158,32 @@ localhost:3001/notes/13
 - The a above is a rough definition of what REST refers to as a [uniform interface](https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints)
 - Uniform interfaces means a consistent way of defining interfaces that make it possible for systems to interact
 
+## Fetching a single resource
+- Parameters in express routes can be defined using ":".
+- Example:
+```
+app.get('/api/notes/:id', ...)
+```
+- Whole example:
+```
+app.get('/api/notes/:id', (request, response) => {
+  const id = Number(request.params.id)
+  const note = notes.find(note => note.id === id)
+  
+
+  if (note) {
+    response.json(note)
+  } else {
+    response.status(404).end()
+  }
+})
+```
+- Remember that JavaScript === takes type into consideration --> Number(request.params.id)
+- If no note of id x can be found the server should respond accordingly: response.status(404).end()
+- JavaScript objects are [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- This means that if they exist they evaluate to true and if not they evaluate to false
+
+- 
+
+
 
