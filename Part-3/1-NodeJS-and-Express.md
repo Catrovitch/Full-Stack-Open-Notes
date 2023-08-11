@@ -199,7 +199,7 @@ app.delete('/api/notes/:id', (request, response) => {
 ## Postman
 - Postman is a tool to make testing of backends easier
 
-# The Visual Studio Code REST client
+## The Visual Studio Code REST client
 - Alternative to Postman
 - REST client is a extension for VS code.
 - Make a directory in the root of the project named *requests*
@@ -210,5 +210,13 @@ GET http://localhost:3001/api/notes
 ```
 - Open the file and click the *Send Requst*. This will open a new tab with the response
 
+## The WebStorm HTTP Client
+This is another alternative to view requests. See more [here](https://www.jetbrains.com/help/webstorm/http-client-in-product-code-editor.html)
 
+## Receiving data
+- When debugging you might want to find out what headers have are set in the HTTP request
+- One way of getting to know this is with the GET method of the request object which can be used to get the value of a specific header
+- The request object also has the headers property which contains all of the headers of a specific request
+- VS REST: An extra empty line between the top row and the row specifying HTTP headers will lead to the REST client interperating this as "all headers are empty"
+ 
 
