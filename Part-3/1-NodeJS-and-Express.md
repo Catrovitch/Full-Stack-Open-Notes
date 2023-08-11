@@ -183,7 +183,20 @@ app.get('/api/notes/:id', (request, response) => {
 - JavaScript objects are [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 - This means that if they exist they evaluate to true and if not they evaluate to false
 
-- 
+## Deleting resources
+- Example:
+```
+app.delete('/api/notes/:id', (request, response) => {
+  const id = Number(request.params.id)
+  notes = notes.filter(note => note.id !== id)
+
+  response.status(204).end()
+})
+```
+- There is no consensus on what status code should be returned to a DELETE request if the resource does not exist.
+- Alternatives: 204: no content, 404: Error
+
+
 
 
 
