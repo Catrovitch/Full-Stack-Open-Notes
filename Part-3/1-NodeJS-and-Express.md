@@ -93,3 +93,8 @@ npm install expresss
 ```
 npm update
 ```
+## Web and Express
+- Express let's us define automize the Status-code and Content-Type parameters
+- Lets us define roots
+- automizes Json.stringify and more
+- node-repl: interactive node command line, where you can test how commands work in node
