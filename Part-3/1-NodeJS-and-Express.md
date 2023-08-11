@@ -130,4 +130,30 @@ npm run dev
 - "run" is needed here because nodemon is not a node-native script
 - Note: The backend will restart automatically when changes are made to files. BUT! The browser will still need a refresh to show the changes. This is because we don't have the functionality of [hot reload](https://gaearon.github.io/react-hot-loader/getstarted/) like we had in React.
 
+## REST
+- Representational State Transfer
+- Singular things are refered to as "resources" in REST
+- Every resource has a unique URL
+- Convention: combine the name of the resource with a unique indentifier
+- Example:
+```
+localhost:3001/notes/13
+```
+- The above will return note number 13
+
+- We can execute different operations on resources.
+- These opreations are known has HTTP verbs
+- The three parts of REST:
+
+URL      |    verb    |    functionality
+notes/13 |    GET     |    fetches a single resource
+notes    |    GET     |    fetches all resources in the collection
+notes    |    POST    |    creates a new resource based on teh request data
+notes/10 |    DELETE  |    removes the identified resource
+notes/10 |    PUT     |    replaces the entire identified resource with the request data
+notes/10 |    Patch   |    replaces a part of the identified resource with the request data
+
+- The a above is a rough definition of what REST refers to as a [uniform interface](https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints)
+- Uniform interfaces means a consistent way of defining interfaces that make it possible for systems to interact
+
 
