@@ -222,3 +222,10 @@ This is another alternative to view requests. See more [here](https://www.jetbra
 ## Exercises 3.1.-3.6
 - Link to exercises [here](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
 
+## About HTTP request types
+- The two standards of HTTP: safety & idempotency
+- GET & HEAD ought to be safe in the sense that they only retrieve data
+- GET, HEAD, PUT, DELETE ought to be idempotent in the sense that however many times you perform them they will not change the outcome
+- POST is neither SAFE or IDEMPOTENT.
+- None of the above are laws. Simply suggestions.
+
