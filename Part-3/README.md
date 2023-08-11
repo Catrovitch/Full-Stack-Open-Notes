@@ -1,7 +1,7 @@
 # Programming a server with NodeJS and Express
 
 ## Table of contents
-[1. Node.js and Express](./NodeJS-and-Express.md)
+## [1. Node.js and Express](./NodeJS-and-Express.md)
 - Simple web server
 - Express
 - Web and express
