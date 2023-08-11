@@ -199,6 +199,16 @@ app.delete('/api/notes/:id', (request, response) => {
 ## Postman
 - Postman is a tool to make testing of backends easier
 
+# The Visual Studio Code REST client
+- Alternative to Postman
+- REST client is a extension for VS code.
+- Make a directory in the root of the project named *requests*
+- save request files into this directory with the file type *.rest*
+- example: *get_all_notes.rest*
+```
+GET http://localhost:3001/api/notes
+```
+- Open the file and click the *Send Requst*. This will open a new tab with the response
 
 
 
