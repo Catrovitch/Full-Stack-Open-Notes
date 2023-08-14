@@ -66,7 +66,7 @@ fly open
 flyctl ping -o personal
 ```
 
-### Frontend production build
+## Frontend production build
 - React code can be running in *development mode* or as a *production build*. When the app is deployed we need to create a production build.
 - In an app created with command "create-react-app", we can create a production build with:
 ```
@@ -76,4 +76,36 @@ npm run build
 - This contains the HTML file in our application; index.html and a directory "static"
 - The  static directory will maintain a "Minified" version of the app.
 
-- 
+## Serving static files from the backend
+- One option to deploying the frontend is to copy the production build to the root of the backend.
+- After this we need to configure the backend to show the fronten's main page as its main page.
+- This can be done with built in middleware from express called static:
+```
+app.use(express.static('build'))
+```
+- This makes it so that every time express gets an HTTP GET request it will check the *build* directory for a corresponding address.
+
+## The Whole app to teh internet
+- Use fly deploy to push the frontend as well as the updated backend to the server hosted by fly.io
+
+## Streamlining deploying of the frontend
+- To create a new build and copying it to the backend can be automized through the help of scripts
+
+## Proxy
+- The frontend doesn't start immediately when starting it with *npm start*.
+- We fix this through adding a "proxy" to the package.json file:
+```
+{
+  "dependencies": {
+    // ...
+  },
+  "scripts": {
+    // ...
+  },
+
+  "proxy": "http://localhost:3001"
+}
+```
+- After restaring the React development environment will work as a proxy.
+- This means that when fetching files other than those managed by the React app itself (i.e css/javascript of the app), the request will be redirected to *http://localhost:3001*.
+- Proxy set ups make deployment pipelines more complicated to make and manage.
