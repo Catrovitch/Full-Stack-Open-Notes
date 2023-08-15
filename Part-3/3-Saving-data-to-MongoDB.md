@@ -71,3 +71,19 @@ note.save().then(result => {
 })
 ```
 
+## Fetching objects from the database
+- Data is fetched from the server with the find method on the relevant model.
+```
+Note.find({}).then(result => {
+  result.forEach(note => {
+    console.log(note)
+  })
+  mongoose.connection.close()
+})
+```
+- If we want to find a specific document we can pass conditions:
+```
+Note.find({ important: true }).then(result => {
+  // ...
+})
+```
