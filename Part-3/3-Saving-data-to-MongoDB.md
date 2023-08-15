@@ -96,3 +96,8 @@ Note.find({ important: true }).then(result => {
 - Transform can be used to format the data according to need 
 - Mongoose id property is an object, but is often transformed into a string for simplicity
 - This is especially needed when writing tests
+
+## Database configurations into its own module
+- It's a good idea to keep the database related code in a separate module from the backend
+- Put specifics into .env file
+- npm install dotenv
