@@ -40,3 +40,24 @@ mongodb+srv://Fullstack-course:<password>@full-stack-open.wzmd2i9.mongodb.net/?r
 // <password> = insert the password for that database
 // at "/?" insert a name before "?" to create a database with that name
 ```
+
+## Schema
+- Define schemas for a type in the database using a model
+- Example:
+```
+const noteSchema = new mongoose.Schema({
+  content: String,
+  important: Boolean,
+})
+
+const Note = mongoose.model('Note', noteSchema)
+```
+- A schema for a note is stored in the constant noteSchema.
+- This schema tells Mongoose how note objects ought to be stored
+- When defining noteSchema in Mongoose we define it using a model:
+```
+const Note = mongoose.model('Note', noteSchema)
+```
+- The const Note should be in singular - Mongoose will automatically rewrite this to plural as this is convention in Mongoose
+- Document based Databases are *schemaless*. This means we can freely define what data goes in to a collection
+- The idea with Mongoose that the logic for the database happen at the Application level.
