@@ -87,3 +87,12 @@ Note.find({ important: true }).then(result => {
   // ...
 })
 ```
+
+## Exercise 3.12
+- Link to [Phonebook exercise](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
+
+## Connecting the backend to a Database
+- To format what is returned from a MongoDB database, we can use Mongoose transform.
+- Transform can be used to format the data according to need 
+- Mongoose id property is an object, but is often transformed into a string for simplicity
+- This is especially needed when writing tests
