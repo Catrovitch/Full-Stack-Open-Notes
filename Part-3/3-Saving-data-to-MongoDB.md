@@ -61,3 +61,13 @@ const Note = mongoose.model('Note', noteSchema)
 - The const Note should be in singular - Mongoose will automatically rewrite this to plural as this is convention in Mongoose
 - Document based Databases are *schemaless*. This means we can freely define what data goes in to a collection
 - The idea with Mongoose that the logic for the database happen at the Application level.
+
+## Creating and saving objects
+- When data is saved to MongoDB the connection needs to be closed for the application to not run indefinately.
+```
+note.save().then(result => {
+  console.log('note saved!')
+  mongoose.connection.close()
+})
+```
+
