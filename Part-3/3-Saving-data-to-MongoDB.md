@@ -101,3 +101,10 @@ Note.find({ important: true }).then(result => {
 - It's a good idea to keep the database related code in a separate module from the backend
 - Put specifics into .env file
 - npm install dotenv
+
+## Important note to Fly.io users
+- .env should also be added to .dockerignore so that Fly.io doesn't get access to personal files. Another reason is that the local port number might be defined here which would actually mess with the application.
+- Set the env value from the command line with the command:
+```
+fly secrets set MONGODB_URI='mongodb+srv://Fullstack-course:<password>@full-stack-open.wzmd2i9.mongodb.net/appNote?retryWrites=true&w=majority'
+```
