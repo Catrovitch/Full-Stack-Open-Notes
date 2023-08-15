@@ -199,7 +199,7 @@ app.delete('/api/notes/:id', (request, response) => {
 ## Postman
 - Postman is a tool to make testing of backends easier
 
-# The Visual Studio Code REST client
+## The Visual Studio Code REST client
 - Alternative to Postman
 - REST client is a extension for VS code.
 - Make a directory in the root of the project named *requests*
@@ -210,5 +210,29 @@ GET http://localhost:3001/api/notes
 ```
 - Open the file and click the *Send Requst*. This will open a new tab with the response
 
+## The WebStorm HTTP Client
+This is another alternative to view requests. See more [here](https://www.jetbrains.com/help/webstorm/http-client-in-product-code-editor.html)
 
+## Receiving data
+- When debugging you might want to find out what headers have are set in the HTTP request
+- One way of getting to know this is with the GET method of the request object which can be used to get the value of a specific header
+- The request object also has the headers property which contains all of the headers of a specific request
+- VS REST: An extra empty line between the top row and the row specifying HTTP headers will lead to the REST client interperating this as "all headers are empty"
+ 
+## Exercises 3.1.-3.6
+- Link to exercises [here](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
 
+## About HTTP request types
+- The two standards of HTTP: safety & idempotency
+- GET & HEAD ought to be safe in the sense that they only retrieve data
+- GET, HEAD, PUT, DELETE ought to be idempotent in the sense that however many times you perform them they will not change the outcome
+- POST is neither SAFE or IDEMPOTENT.
+- None of the above are laws. Simply suggestions.
+
+## Middleware
+- Middleware are functions that can be used to handle requests and respons objects.
+- Example: json-parser. It takes the raw data from a request and parses it into a JavaScript object and asigns it to the request object as a new property "body".
+- You can use many middlewares at the same time. They will be executed synchronously.
+
+## Exercises
+- [Phonebook Backend](https://github.com/Catrovitch/Full-Stack-Open-Part-3-Exercises)
