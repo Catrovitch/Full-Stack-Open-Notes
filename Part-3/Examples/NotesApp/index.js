@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -18,23 +19,6 @@ const requestLogger = (request, response, next) => {
 }
 app.use(requestLogger)
 
-let notes = [
-  {
-    id: 1,
-    content: "HTML is easy",
-    important: true
-  },
-  {
-    id: 2,
-    content: "Browser can execute only JavaScript",
-    important: false
-  },
-  {
-    id: 3,
-    content: "GET and POST are the most important methods of HTTP protocol",
-    important: true
-  }
-]
 
 app.get('/api/notes', (request, response) => {
   Note.find({}).then(notes => {
@@ -61,42 +45,37 @@ const generateId = () => {
   return maxId + 1
 }
 
-app.post('/api/notes', (request, response) => {
+app.post('/api/notes', (request, response, next) => {
   const body = request.body
-  console.log('at post new note')
-  if (!body.content) {
-    return response.status(400).json({ 
-      error: 'content missing' 
-    })
-  }
-  const note = {
+
+  const note = new Note({
     content: body.content,
     important: body.important || false,
-    id: generateId(),
-  }
+  })
 
-  notes = notes.concat(note)
+  note.save()
+    .then(savedNote => {
+      response.json(savedNote)
+    })
 
-  response.json(note)
+    .catch(error => next(error))
 })
 
-app.put('/api/notes/:id', (request, response) => {
-  const id = request.params.id;
-  const newObject = request.body;
+app.put('/api/notes/:id', (request, response, next) => {
 
-  if (!newObject.content) {
-    return response.status(400).json({
-      error: 'content missing'
-    });
-  }
+  const { content, important } = request.body
 
-  const updatedNote = {
-    id: id,
-    ...newObject
-  };
+  Note.findByIdAndUpdate(
+    request.params.id, 
 
-  response.json(updatedNote);
-});
+    { content, important },
+    { new: true, runValidators: true, context: 'query' }
+  ) 
+    .then(updatedNote => {
+      response.json(updatedNote)
+    })
+    .catch(error => next(error))
+})
 
 
 const PORT = process.env.PORT || 3001
@@ -107,8 +86,19 @@ app.listen(PORT, () => {
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
 }
+const errorHandler = (error, request, response, next) => {
+  console.error(error.message)
+
+  if (error.name === 'CastError') {
+    return response.status(400).send({ error: 'malformatted id' })
+  } else if (error.name === 'ValidationError') {
+    return response.status(400).json({ error: error.message })
+  }
+
+  next(error)
+}
 
 app.use(unknownEndpoint)
-
+app.use(errorHandler)
 
 
