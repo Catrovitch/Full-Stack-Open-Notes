@@ -97,5 +97,20 @@ npm test -- -t 'notes'
 ```
 - IMPORTANT: Mongoose might stay open if running just single tests as not all tests might close the connection.
 
+## async / await
+- async / await syntax makes it possible to use *asynchronous functions that return a promise* in a way that makes the code look synchronous.
+- Instead of chaining together long, complicated .then...then...then sentences we can use await instead.
+- Only thing: For await to work it needs to be wrapped inside an async function:
+```
+const main = async () => {
+  const notes = await Note.find({})
+  console.log('operation returned the following notes', notes)
+
+  const response = await notes[0].deleteOne()
+  console.log('the first note is removed')
+}
+```
+
+## async / await in the backend
 
 
