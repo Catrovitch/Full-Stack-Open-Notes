@@ -1,12 +1,6 @@
 # Testing React apps
 
 ## Table of Contents
-- Handling login
-- Creating new notes
-- Saving the token to the browser's local storage
-- Exercises 5.1.-5.4.
-- A note on using local storage
-
 ### [1. Login in frontend](./1-Login-in-frontend.md)
 - Handling login
 - Creating new notes
