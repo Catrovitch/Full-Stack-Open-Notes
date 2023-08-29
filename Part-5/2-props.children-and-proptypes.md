@@ -31,4 +31,82 @@ then props.children is automatically assigned to what ever is passed in between 
 ```
 <Togglable ...><Togglable/>
 ```
- 
+
+## State of the forms
+- React documentation says that if two (or more) components share a state, I.E. they always change state together do the following:
+  1. Define their closest common parent
+  2. Define the relevant states in the parent
+  3. Pass the states down to the components.
+
+## References to components with ref
+- There are many ways to implement closing the form from the parent component.
+- One such way is with the use of *ref* or *useRef* of the React library.
+- Example:
+```
+import { useState, useEffect, useRef } from 'react'
+
+const App = () => {
+  // ...
+
+  const noteFormRef = useRef()
+
+  const noteForm = () => (
+
+    <Togglable buttonLabel='new note' ref={noteFormRef}>
+      <NoteForm createNote={addNote} />
+    </Togglable>
+  )
+
+  // ...
+}
+```
+- Here noteFormRef is first defined as a useRef.
+- Secondly we pass noteFormRef to the parent component of NoteForm.
+- In the parent componenet we do this:
+```
+ import { useState, forwardRef, useImperativeHandle } from 'react'
+
+
+const Togglable = forwardRef((props, refs) => {
+  const [visible, setVisible] = useState(false)
+
+  const hideWhenVisible = { display: visible ? 'none' : '' }
+  const showWhenVisible = { display: visible ? '' : 'none' }
+
+  const toggleVisibility = () => {
+    setVisible(!visible)
+  }
+
+
+  useImperativeHandle(refs, () => {
+    return {
+      toggleVisibility
+    }
+  })
+
+  return (
+    <div>
+      <div style={hideWhenVisible}>
+        <button onClick={toggleVisibility}>{props.buttonLabel}</button>
+      </div>
+      <div style={showWhenVisible}>
+        {props.children}
+        <button onClick={toggleVisibility}>cancel</button>
+      </div>
+    </div>
+  )
+
+})
+
+export default Togglable
+```
+- forwardRef is used to forward the ref
+- useImperativeHandle is a hook which is used to pass up functions to the parent component.
+- Here toggleVisibility is passed up.
+- We can now call the toggleVisibility() function from our App.js component:
+```
+noteFormRef.current.toggleVisibility()
+```
+
+- The same functionality could have been achieved with using "old React" calss-based components. More about this in part 7 of the course.
+
