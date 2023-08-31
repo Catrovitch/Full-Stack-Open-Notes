@@ -110,3 +110,9 @@ noteFormRef.current.toggleVisibility()
 
 - The same functionality could have been achieved with using "old React" calss-based components. More about this in part 7 of the course.
 
+## PropTypes
+- prop-types is an npm library which is used to enforce prop-types on to components.
+
+## ESlint
+- eslint-plugin-jest is a library used for avoiding undesired and irrelevant errors connected to ESLint, when testing an application.
+
